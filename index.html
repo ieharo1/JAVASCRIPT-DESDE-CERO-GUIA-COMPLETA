@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript desde Cero - Guía Completa</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">JavaScript desde Cero</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#que-es">¿Qué es?</a></li>
+                    <li><a href="#arquitectura">Arquitectura</a></li>
+                    <li><a href="#temas">Temas</a></li>
+                    <li><a href="#ejemplos">Ejemplos</a></li>
+                </ul>
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <h1>JavaScript desde Cero</h1>
+            <p class="hero-subtitle">Guía completa para aprender JavaScript desde fundamentos hasta conceptos avanzados.</p>
+            <div class="hero-buttons">
+                <a href="#que-es" class="btn btn-primary">Comenzar</a>
+                <a href="#ejemplos" class="btn btn-secondary">Ver ejemplos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ¿Qué es JavaScript? -->
+    <section id="que-es" class="section">
+        <div class="container">
+            <h2>¿Qué es JavaScript?</h2>
+            <div class="content-grid">
+                <div class="content-card">
+                    <div class="card-icon">🌐</div>
+                    <h3>Lenguaje de Programación Web</h3>
+                    <p>JavaScript es un lenguaje de programación interpretado, dinámico y multi-paradigma que se ejecuta en navegadores y servidores.</p>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Para Qué Sirve</h3>
+                    <p>Desarrollo web frontend, backend con Node.js, aplicaciones móviles, desktop, inteligencia artificial y más.</p>
+                </div>
+                <div class="content-card">
+                    <div class="card-icon">🔧</div>
+                    <h3>Características Principales</h3>
+                    <p>Tipado dinámico, orientado a prototipos, funcional, asíncrono, single-threaded con event loop y no bloqueante.</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h4>💡 ¿Sabías qué?</h4>
+                <p>JavaScript fue creado en solo 10 días por Brendan Eich en 1995 para Netscape. A pesar del nombre, no tiene relación con Java. Es el lenguaje más usado en el mundo según Stack Overflow.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Arquitectura -->
+    <section id="arquitectura" class="section section-alt">
+        <div class="container">
+            <h2>Arquitectura de JavaScript</h2>
+            <p class="section-intro">JavaScript utiliza un modelo de ejecución single-threaded con event loop para manejar operaciones asíncronas.</p>
+
+            <div class="architecture-diagram">
+                <div class="arch-layer">
+                    <h4>Código JavaScript</h4>
+                    <p>Tu código fuente</p>
+                </div>
+                <div class="arch-arrow">⬇️</div>
+                <div class="arch-layer">
+                    <h4>Call Stack</h4>
+                    <p>Pila de ejecución de funciones</p>
+                </div>
+                <div class="arch-arrow">⬇️</div>
+                <div class="arch-layer">
+                    <h4>Web APIs</h4>
+                    <p>DOM, setTimeout, fetch, localStorage</p>
+                </div>
+                <div class="arch-arrow">⬇️</div>
+                <div class="arch-layer">
+                    <h4>Event Loop + Callback Queue</h4>
+                    <p>Cola de tareas y bucle de eventos</p>
+                </div>
+            </div>
+
+            <div class="components-grid">
+                <div class="component-card">
+                    <h4>📊 Componentes del Lenguaje</h4>
+                    <ul>
+                        <li>Variables (var, let, const)</li>
+                        <li>Tipos de datos primitivos</li>
+                        <li>Funciones y arrow functions</li>
+                        <li>Objetos y arrays</li>
+                    </ul>
+                </div>
+                <div class="component-card">
+                    <h4>💾 DOM y BOM</h4>
+                    <ul>
+                        <li>Document Object Model</li>
+                        <li>Browser Object Model</li>
+                        <li>Eventos del navegador</li>
+                        <li>Manipulación del DOM</li>
+                    </ul>
+                </div>
+                <div class="component-card">
+                    <h4>🔒 Características Modernas</h4>
+                    <ul>
+                        <li>ES6+ (let, const, arrow functions)</li>
+                        <li>Promesas y async/await</li>
+                        <li>Módulos ES6</li>
+                        <li>Classes y herencia</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Temas -->
+    <section id="temas" class="section">
+        <div class="container">
+            <h2>Contenido del Curso</h2>
+            <div class="topics-grid">
+                <div class="topic-card" data-topic="1">
+                    <div class="topic-number">01</div>
+                    <h3>Introducción</h3>
+                    <p>Historia de JavaScript, ecosistema y configuración del entorno de desarrollo.</p>
+                    <a href="#" class="topic-link">Ver tema →</a>
+                </div>
+                <div class="topic-card" data-topic="2">
+                    <div class="topic-number">02</div>
+                    <h3>Instalación</h3>
+                    <p>Configuración de Node.js, npm y editores de código (VS Code).</p>
+                    <a href="#" class="topic-link">Ver tema →</a>
+                </div>
+                <div class="topic-card" data-topic="3">
+                    <div class="topic-number">03</div>
+                    <h3>Conceptos básicos</h3>
+                    <p>Variables, tipos de datos, operadores, estructuras de control y funciones.</p>
+                    <a href="#" class="topic-link">Ver tema →</a>
+                </div>
+                <div class="topic-card" data-topic="4">
+                    <div class="topic-number">04</div>
+                    <h3>Ejemplos prácticos</h3>
+                    <p>Manipulación del DOM, eventos, formularios y aplicaciones interactivas.</p>
+                    <a href="#" class="topic-link">Ver tema →</a>
+                </div>
+                <div class="topic-card" data-topic="5">
+                    <div class="topic-number">05</div>
+                    <h3>Buenas prácticas</h3>
+                    <p>Código limpio, debugging, testing y patrones de diseño en JavaScript.</p>
+                    <a href="#" class="topic-link">Ver tema →</a>
+                </div>
+                <div class="topic-card" data-topic="6">
+                    <div class="topic-number">06</div>
+                    <h3>Casos reales</h3>
+                    <p>Aplicaciones SPA, consumo de APIs, Node.js y frameworks modernos.</p>
+                    <a href="#" class="topic-link">Ver tema →</a>
+                </div>
+                <div class="topic-card" data-topic="7">
+                    <div class="topic-number">07</div>
+                    <h3>Proyecto final</h3>
+                    <p>Desarrollo de una aplicación web completa con JavaScript moderno.</p>
+                    <a href="#" class="topic-link">Ver tema →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ejemplos -->
+    <section id="ejemplos" class="section section-alt">
+        <div class="container">
+            <h2>Ejemplos de Código</h2>
+            <div class="examples-container">
+                <div class="example-card">
+                    <h4>Variables y Tipos</h4>
+                    <pre><code class="language-javascript">const nombre = "Juan";
+let edad = 30;
+const esMayor = edad >= 18;
+const hobbies = ["leer", "codificar"];
+const persona = { nombre, edad };</code></pre>
+                </div>
+                <div class="example-card">
+                    <h4>Funciones</h4>
+                    <pre><code class="language-javascript">// Función tradicional
+function saludar(nombre) {
+    return `Hola ${nombre}`;
+}
+
+// Arrow function
+const sumar = (a, b) => a + b;</code></pre>
+                </div>
+                <div class="example-card">
+                    <h4>DOM Manipulation</h4>
+                    <pre><code class="language-javascript">const btn = document.querySelector('#miBoton');
+btn.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+});</code></pre>
+                </div>
+                <div class="example-card">
+                    <h4>Async/Await</h4>
+                    <pre><code class="language-javascript">async function obtenerDatos() {
+    const response = await fetch('/api/data');
+    const datos = await response.json();
+    return datos;
+}</code></pre>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn btn-primary">Ver más ejemplos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>JavaScript desde Cero</h4>
+                    <p>Guía educativa completa para aprender JavaScript desde los fundamentos hasta conceptos avanzados.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#que-es">¿Qué es?</a></li>
+                        <li><a href="#temas">Temas</a></li>
+                        <li><a href="#ejemplos">Ejemplos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">MDN Web Docs</a></li>
+                        <li><a href="https://javascript.info/" target="_blank">JavaScript.info</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>👨‍💻 Desarrollado por <strong>Isaac Esteban Haro Torres</strong></p>
+                <p class="developer-info">Ingeniero en Sistemas · Full Stack · Automatización · Data</p>
+                <div class="developer-contact">
+                    <p>📧 Email: <a href="mailto:zackharo1@gmail.com">zackharo1@gmail.com</a></p>
+                    <p>💻 GitHub: <a href="https://github.com/ieharo1" target="_blank">github.com/ieharo1</a></p>
+                </div>
+                <p class="copyright">© 2026 Isaac Esteban Haro Torres - Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
