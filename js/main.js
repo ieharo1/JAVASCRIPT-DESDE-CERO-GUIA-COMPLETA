@@ -1,35 +1,64 @@
-// Main JavaScript - Actualizado con navegación por temas
+/* ============================================
+   JavaScript Principal - JavaScript Desde Cero
+   ============================================ */
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('JavaScript Desde Cero - Sitio cargado correctamente');
+    console.log('⚡ JavaScript Desde Cero - Sitio cargado correctamente');
+
+    // Toggle del menú móvil
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+        });
+    }
 
     // Smooth scroll para enlaces internos
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
             const targetId = this.getAttribute('href');
-            
-            if (targetId.startsWith('#tema')) {
+
+            // Si es un enlace a un tema, mostrar el contenido
+            if (targetId.startsWith('#tema') || targetId.startsWith('#js-topic')) {
                 showTopicContent(targetId);
                 return;
             }
-            
+
             const target = document.querySelector(targetId);
-            if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
         });
     });
 
+    // Función para mostrar contenido de tema
     function showTopicContent(topicId) {
         const content = document.getElementById(topicId);
         if (content) {
-            document.querySelectorAll('.content-detail').forEach(el => el.style.display = 'none');
+            // Ocultar todos los contenidos
+            document.querySelectorAll('.content-detail, .topic-content').forEach(el => {
+                el.style.display = 'none';
+            });
+
+            // Mostrar el contenido seleccionado
             content.style.display = 'block';
-            setTimeout(() => content.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+
+            // Scroll suave al contenido
+            setTimeout(() => {
+                content.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
         }
     }
 
-    document.querySelectorAll('.content-detail').forEach(el => el.style.display = 'none');
+    // Ocultar todos los content-detail al cargar
+    document.querySelectorAll('.content-detail, .topic-content').forEach(el => {
+        el.style.display = 'none';
+    });
 
+    // Animaciones con Intersection Observer
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -46,5 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 
-    console.log('%c💻 ¡Bienvenido a JavaScript Desde Cero!', 'font-size: 20px; color: #f7df1e; font-weight: bold;');
+    // Mensaje de bienvenida
+    console.log('%c⚡ ¡Bienvenido a JavaScript Desde Cero!', 'font-size: 20px; color: #f7df1e; font-weight: bold;');
+    console.log('%cEl lenguaje de programación más popular del mundo', 'font-size: 14px; color: #323330;');
 });
