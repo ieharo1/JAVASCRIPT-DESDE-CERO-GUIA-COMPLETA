@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetId = this.getAttribute('href');
 
             // Si es un enlace a un tema, mostrar el contenido
-            if (targetId.startsWith('#tema') || targetId.startsWith('#js-topic')) {
+            if (targetId.startsWith('#tema')) {
                 showTopicContent(targetId);
                 return;
             }
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const content = document.getElementById(topicId);
         if (content) {
             // Ocultar todos los contenidos
-            document.querySelectorAll('.content-detail, .topic-content').forEach(el => {
+            document.querySelectorAll('.content-detail').forEach(el => {
                 el.style.display = 'none';
             });
 
@@ -54,25 +54,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Ocultar todos los content-detail al cargar
-    document.querySelectorAll('.content-detail, .topic-content').forEach(el => {
+    document.querySelectorAll('.content-detail').forEach(el => {
         el.style.display = 'none';
-    });
-
-    // Animaciones con Intersection Observer
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, { threshold: 0.1 });
-
-    document.querySelectorAll('.module, .resource-card, .code-block, .topic-card').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-        observer.observe(el);
     });
 
     // Mensaje de bienvenida

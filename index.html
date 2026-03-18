@@ -17,11 +17,11 @@
                     <span class="logo-text">JavaScript desde Cero</span>
                 </div>
                 <ul class="nav-menu" id="navMenu">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#que-es">¿Qué es?</a></li>
-                    <li><a href="#arquitectura">Arquitectura</a></li>
-                    <li><a href="#temas">Temas</a></li>
-                    <li><a href="#ejemplos">Ejemplos</a></li>
+                    <li><a href="#inicio"><span class="nav-icon">🏠</span> Inicio</a></li>
+                    <li><a href="#que-es"><span class="nav-icon">📖</span> ¿Qué es?</a></li>
+                    <li><a href="#arquitectura"><span class="nav-icon">🏗️</span> Arquitectura</a></li>
+                    <li><a href="#temas"><span class="nav-icon">📚</span> Temas</a></li>
+                    <li><a href="#ejemplos"><span class="nav-icon">💻</span> Ejemplos</a></li>
                 </ul>
                 <button class="nav-toggle" id="navToggle">
                     <span></span>
@@ -39,7 +39,7 @@
             <p class="hero-subtitle">Guía completa para aprender JavaScript desde fundamentos hasta conceptos avanzados.</p>
             <div class="hero-buttons">
                 <a href="#que-es" class="btn btn-primary">Comenzar</a>
-                <a href="#temas" class="btn btn-secondary">Ver temas</a>
+                <a href="#ejemplos" class="btn btn-secondary">Ver ejemplos</a>
             </div>
         </div>
     </section>
@@ -68,7 +68,7 @@
 
             <div class="info-box">
                 <h4>💡 ¿Sabías qué?</h4>
-                <p>JavaScript fue creado en solo 10 días por Brendan Eich en 1995 para Netscape. A pesar del nombre, no tiene relación con Java. Es el lenguaje más usado en el mundo según Stack Overflow.</p>
+                <p>JavaScript fue creado en solo 10 días por Brendan Eich en 1995 para Netscape. A pesar del nombre, no tiene relación con Java. Es el lenguaje más usado en el mundo según Stack Overflow Developer Survey.</p>
             </div>
         </div>
     </section>
@@ -82,7 +82,7 @@
             <div class="architecture-diagram">
                 <div class="arch-layer">
                     <h4>Código JavaScript</h4>
-                    <p>Tu código fuente</p>
+                    <p>Tu código fuente (.js)</p>
                 </div>
                 <div class="arch-arrow">⬇️</div>
                 <div class="arch-layer">
@@ -137,1325 +137,314 @@
     <section id="temas" class="section">
         <div class="container">
             <h2>Contenido del Curso</h2>
-            <p class="section-intro">Explora nuestros módulos y temas diseñados para llevarte de principiante a experto en JavaScript.</p>
-            
-            <!-- Módulos -->
-            <div class="modules-container">
-                <!-- Módulo 1 -->
-                <div class="module">
-                    <div class="module-header">
-                        <h3>Módulo 1: Fundamentos de JavaScript</h3>
-                        <span class="module-badge">Básico</span>
-                    </div>
-                    <div class="topics-list">
-                        <div class="topic-item" onclick="showTopicContent('js-topic-1')">
-                            <span class="topic-icon">📦</span>
-                            <div class="topic-info">
-                                <h4>Variables y Tipos de Datos</h4>
-                                <p>var, let, const, strings, numbers, booleans</p>
-                            </div>
-                            <button class="btn-view">Ver tema →</button>
-                        </div>
-                        <div class="topic-item" onclick="showTopicContent('js-topic-2')">
-                            <span class="topic-icon">🔀</span>
-                            <div class="topic-info">
-                                <h4>Operadores y Expresiones</h4>
-                                <p>Aritméticos, lógicos, comparación, asignación</p>
-                            </div>
-                            <button class="btn-view">Ver tema →</button>
-                        </div>
-                        <div class="topic-item" onclick="showTopicContent('js-topic-3')">
-                            <span class="topic-icon">🔁</span>
-                            <div class="topic-info">
-                                <h4>Estructuras de Control</h4>
-                                <p>if/else, switch, for, while, do...while</p>
-                            </div>
-                            <button class="btn-view">Ver tema →</button>
-                        </div>
-                        <div class="topic-item" onclick="showTopicContent('js-topic-4')">
-                            <span class="topic-icon">⚙️</span>
-                            <div class="topic-info">
-                                <h4>Funciones</h4>
-                                <p>Declaración, expresión, arrow functions, parámetros</p>
-                            </div>
-                            <button class="btn-view">Ver tema →</button>
-                        </div>
-                    </div>
+            <div class="topics-grid">
+                <div class="topic-card">
+                    <div class="topic-number">01</div>
+                    <h3>Introducción</h3>
+                    <p>Historia de JavaScript, evolución ECMAScript y configuración del entorno de desarrollo.</p>
+                    <a href="#tema1-1" class="topic-link">Ver tema →</a>
                 </div>
-
-                <!-- Módulo 2 -->
-                <div class="module">
-                    <div class="module-header">
-                        <h3>Módulo 2: JavaScript Intermedio</h3>
-                        <span class="module-badge">Intermedio</span>
-                    </div>
-                    <div class="topics-list">
-                        <div class="topic-item" onclick="showTopicContent('js-topic-5')">
-                            <span class="topic-icon">📚</span>
-                            <div class="topic-info">
-                                <h4>Arrays y Métodos</h4>
-                                <p>map, filter, reduce, forEach, find, some, every</p>
-                            </div>
-                            <button class="btn-view">Ver tema →</button>
-                        </div>
-                        <div class="topic-item" onclick="showTopicContent('js-topic-6')">
-                            <span class="topic-icon">🔷</span>
-                            <div class="topic-info">
-                                <h4>Objetos y Prototipos</h4>
-                                <p>Creación, propiedades, métodos, prototype chain</p>
-                            </div>
-                            <button class="btn-view">Ver tema →</button>
-                        </div>
-                        <div class="topic-item" onclick="showTopicContent('js-topic-7')">
-                            <span class="topic-icon">🌐</span>
-                            <div class="topic-info">
-                                <h4>DOM Manipulation</h4>
-                                <p>querySelector, createElement, eventos, clases</p>
-                            </div>
-                            <button class="btn-view">Ver tema →</button>
-                        </div>
-                        <div class="topic-item" onclick="showTopicContent('js-topic-8')">
-                            <span class="topic-icon">🎯</span>
-                            <div class="topic-info">
-                                <h4>Eventos del Navegador</h4>
-                                <p>click, submit, keypress, event delegation</p>
-                            </div>
-                            <button class="btn-view">Ver tema →</button>
-                        </div>
-                    </div>
+                <div class="topic-card">
+                    <div class="topic-number">02</div>
+                    <h3>Instalación</h3>
+                    <p>Node.js, npm, gestores de paquetes y editores de código modernos.</p>
+                    <a href="#tema1-2" class="topic-link">Ver tema →</a>
                 </div>
-
-                <!-- Módulo 3 -->
-                <div class="module">
-                    <div class="module-header">
-                        <h3>Módulo 3: JavaScript Avanzado</h3>
-                        <span class="module-badge">Avanzado</span>
-                    </div>
-                    <div class="topics-list">
-                        <div class="topic-item" onclick="showTopicContent('js-topic-9')">
-                            <span class="topic-icon">🔄</span>
-                            <div class="topic-info">
-                                <h4>Programación Asíncrona</h4>
-                                <p>Callbacks, Promises, async/await, fetch API</p>
-                            </div>
-                            <button class="btn-view">Ver tema →</button>
-                        </div>
-                        <div class="topic-item" onclick="showTopicContent('js-topic-10')">
-                            <span class="topic-icon">📦</span>
-                            <div class="topic-info">
-                                <h4>Módulos ES6</h4>
-                                <p>import, export, módulos dinámicos</p>
-                            </div>
-                            <button class="btn-view">Ver tema →</button>
-                        </div>
-                        <div class="topic-item" onclick="showTopicContent('js-topic-11')">
-                            <span class="topic-icon">🏗️</span>
-                            <div class="topic-info">
-                                <h4>Clases y Herencia</h4>
-                                <p>class, extends, super, métodos estáticos</p>
-                            </div>
-                            <button class="btn-view">Ver tema →</button>
-                        </div>
-                        <div class="topic-item" onclick="showTopicContent('js-topic-12')">
-                            <span class="topic-icon">🔧</span>
-                            <div class="topic-info">
-                                <h4>Patrones y Buenas Prácticas</h4>
-                                <p>Closure, IIFE, destructuring, spread operator</p>
-                            </div>
-                            <button class="btn-view">Ver tema →</button>
-                        </div>
-                    </div>
+                <div class="topic-card">
+                    <div class="topic-number">03</div>
+                    <h3>Conceptos básicos</h3>
+                    <p>Variables, tipos de datos, operadores, estructuras de control y funciones.</p>
+                    <a href="#tema1-3" class="topic-link">Ver tema →</a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Content Detail Sections -->
-    <section id="content-detail" class="section section-alt content-detail-section">
-        <div class="container">
-            <button class="btn-back" onclick="backToTopics()">← Volver a temas</button>
-            
-            <!-- Topic 1: Variables y Tipos de Datos -->
-            <div id="js-topic-1" class="topic-content">
-                <h2>Variables y Tipos de Datos</h2>
-                <div class="topic-body">
-                    <p class="topic-intro">Las variables son contenedores para almacenar datos. JavaScript ofrece tres formas de declarar variables: var, let y const.</p>
-                    
-                    <h3>Declaración de Variables</h3>
-                    <div class="code-block">
-                        <pre><code>// var - alcance de función (legacy)
-var nombre = "Juan";
-
-// let - alcance de bloque, reasignable
-let edad = 25;
-edad = 26; // válido
-
-// const - alcance de bloque, no reasignable
-const PI = 3.1416;
-// PI = 3.14; // ERROR!</code></pre>
-                    </div>
-
-                    <h3>Tipos de Datos Primitivos</h3>
-                    <div class="info-grid">
-                        <div class="info-item">
-                            <h4>String</h4>
-                            <p>Cadenas de texto entre comillas</p>
-                            <code>let nombre = "María";</code>
-                        </div>
-                        <div class="info-item">
-                            <h4>Number</h4>
-                            <p>Números enteros y decimales</p>
-                            <code>let edad = 30;</code>
-                        </div>
-                        <div class="info-item">
-                            <h4>Boolean</h4>
-                            <p>Valores verdadero o falso</p>
-                            <code>let activo = true;</code>
-                        </div>
-                        <div class="info-item">
-                            <h4>Null</h4>
-                            <p>Valor nulo intencional</p>
-                            <code>let dato = null;</code>
-                        </div>
-                        <div class="info-item">
-                            <h4>Undefined</h4>
-                            <p>Variable sin valor asignado</p>
-                            <code>let x; // undefined</code>
-                        </div>
-                        <div class="info-item">
-                            <h4>Symbol</h4>
-                            <p>Identificador único</p>
-                            <code>let id = Symbol("id");</code>
-                        </div>
-                    </div>
-
-                    <h3>Ejemplo Práctico</h3>
-                    <div class="code-block">
-                        <pre><code>// Declaración y uso de variables
-const usuario = {
-    nombre: "Carlos",
-    edad: 28,
-    esActivo: true
-};
-
-let contador = 0;
-contador = contador + 1;
-
-console.log(`Hola, ${usuario.nombre}`);
-console.log(`Tipo de dato: ${typeof usuario.edad}`);</code></pre>
-                    </div>
-
-                    <div class="tip-box">
-                        <strong>💡 Consejo:</strong> Usa <code>const</code> por defecto y solo usa <code>let</code> cuando necesites reasignar la variable. Evita <code>var</code> en código moderno.
-                    </div>
+                <div class="topic-card">
+                    <div class="topic-number">04</div>
+                    <h3>DOM y Eventos</h3>
+                    <p>Manipulación del DOM, eventos, formularios y almacenamiento local.</p>
+                    <a href="#tema2-1" class="topic-link">Ver tema →</a>
+                </div>
+                <div class="topic-card">
+                    <div class="topic-number">05</div>
+                    <h3>JavaScript Moderno</h3>
+                    <p>ES6+, arrow functions, destructuring, spread operator y módulos.</p>
+                    <a href="#tema2-2" class="topic-link">Ver tema →</a>
+                </div>
+                <div class="topic-card">
+                    <div class="topic-number">06</div>
+                    <h3>Asincronía</h3>
+                    <p>Callbacks, promesas, async/await y fetch API para peticiones HTTP.</p>
+                    <a href="#tema3-1" class="topic-link">Ver tema →</a>
+                </div>
+                <div class="topic-card">
+                    <div class="topic-number">07</div>
+                    <h3>Proyecto final</h3>
+                    <p>Desarrollo de una aplicación SPA completa con JavaScript moderno.</p>
+                    <a href="#tema3-2" class="topic-link">Ver tema →</a>
                 </div>
             </div>
 
-            <!-- Topic 2: Operadores y Expresiones -->
-            <div id="js-topic-2" class="topic-content">
-                <h2>Operadores y Expresiones</h2>
-                <div class="topic-body">
-                    <p class="topic-intro">Los operadores permiten realizar operaciones con valores y variables. JavaScript incluye diversos tipos de operadores.</p>
-                    
-                    <h3>Operadores Aritméticos</h3>
-                    <div class="code-block">
-                        <pre><code>let a = 10, b = 3;
-
-a + b   // 13 - Suma
-a - b   // 7  - Resta
-a * b   // 30 - Multiplicación
-a / b   // 3.33 - División
-a % b   // 1  - Módulo (resto)
-a ** b  // 1000 - Potencia
-a++     // 11 - Incremento
-b--     // 2  - Decremento</code></pre>
+            <!-- Contenido Detallado de Temas -->
+            <div class="topic-content-container">
+                <div class="content-detail" id="tema1-1">
+                    <h3>📌 Introducción a JavaScript</h3>
+                    <div class="content-body">
+                        <p><strong>JavaScript</strong> es un lenguaje de programación interpretado, de alto nivel, dinámico y multi-paradigma que se ejecuta principalmente en navegadores web y servidores con Node.js.</p>
+                        <h4>Historia:</h4>
+                        <p>JavaScript fue creado por Brendan Eich en 1995 para Netscape Navigator en solo 10 días. Originalmente se llamó LiveScript, pero fue renombrado a JavaScript por motivos de marketing.</p>
+                        <h4>Evolución ECMAScript:</h4>
+                        <ul>
+                            <li>ES1 (1997) - Primera estandarización</li>
+                            <li>ES5 (2009) - Strict mode, JSON, forEach</li>
+                            <li>ES6/ES2015 - Arrow functions, clases, módulos</li>
+                            <li>ES2020+ - Optional chaining, nullish coalescing</li>
+                        </ul>
+                        <div class="info-box">
+                            <strong>💡 ¿Sabías qué?</strong>
+                            <p>JavaScript es el lenguaje más popular del mundo según Stack Overflow Developer Survey 2023, usado por el 65% de los desarrolladores.</p>
+                        </div>
                     </div>
-
-                    <h3>Operadores de Comparación</h3>
-                    <div class="code-block">
-                        <pre><code>5 == "5"   // true - Igualdad (con conversión)
-5 === "5"  // false - Igualdad estricta
-5 != "5"   // false - Desigualdad
-5 !== "5"  // true - Desigualdad estricta
-5 > 3      // true - Mayor que
-5 < 3      // false - Menor que
-5 >= 5     // true - Mayor o igual
-5 <= 5     // true - Menor o igual</code></pre>
-                    </div>
-
-                    <h3>Operadores Lógicos</h3>
-                    <div class="code-block">
-                        <pre><code>true && false  // false - AND (y)
-true || false  // true  - OR (o)
-!true          // false - NOT (no)
-
-// Short-circuit evaluation
-let nombre = usuario?.nombre || "Anónimo";
-let activo = esUsuario && tienePermiso;</code></pre>
-                    </div>
-
-                    <h3>Operadores de Asignación</h3>
-                    <div class="code-block">
-                        <pre><code>let x = 10;
-x += 5;  // x = x + 5 → 15
-x -= 3;  // x = x - 3 → 12
-x *= 2;  // x = x * 2 → 24
-x /= 4;  // x = x / 4 → 6
-x %= 4;  // x = x % 4 → 2</code></pre>
-                    </div>
-
-                    <div class="tip-box">
-                        <strong>💡 Consejo:</strong> Siempre usa <code>===</code> y <code>!==</code> en lugar de <code>==</code> y <code>!=</code> para evitar conversiones de tipo inesperadas.
-                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
                 </div>
-            </div>
 
-            <!-- Topic 3: Estructuras de Control -->
-            <div id="js-topic-3" class="topic-content">
-                <h2>Estructuras de Control</h2>
-                <div class="topic-body">
-                    <p class="topic-intro">Las estructuras de control permiten alterar el flujo de ejecución del programa según condiciones específicas.</p>
-                    
-                    <h3>Condicionales: if/else</h3>
-                    <div class="code-block">
-                        <pre><code>const edad = 18;
-
-if (edad >= 18) {
-    console.log("Es mayor de edad");
-} else if (edad >= 13) {
-    console.log("Es adolescente");
-} else {
-    console.log("Es niño");
-}
-
-// Ternario
-const estado = edad >= 18 ? "adulto" : "menor";</code></pre>
+                <div class="content-detail" id="tema1-2">
+                    <h3>🔧 Instalación del Entorno</h3>
+                    <div class="content-body">
+                        <h4>Instalar Node.js:</h4>
+                        <ol>
+                            <li>Descarga Node.js desde nodejs.org</li>
+                            <li>Ejecuta el instalador</li>
+                            <li>Verifica la instalación:</li>
+                        </ol>
+                        <pre><code>node --version
+npm --version</code></pre>
+                        <h4>En macOS con Homebrew:</h4>
+                        <pre><code>brew install node</code></pre>
+                        <h4>En Linux:</h4>
+                        <pre><code>curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt-get install -y nodejs</code></pre>
+                        <h4>Inicializar proyecto:</h4>
+                        <pre><code>npm init -y
+npm install --save-dev nodemon</code></pre>
                     </div>
-
-                    <h3>Switch</h3>
-                    <div class="code-block">
-                        <pre><code>const dia = 3;
-let nombreDia;
-
-switch (dia) {
-    case 1:
-        nombreDia = "Lunes";
-        break;
-    case 2:
-        nombreDia = "Martes";
-        break;
-    case 3:
-        nombreDia = "Miércoles";
-        break;
-    default:
-        nombreDia = "Día inválido";
-}
-
-// Switch moderno con múltiples casos
-switch (fruta) {
-    case "manzana":
-    case "pera":
-        console.log("Fruta de árbol");
-        break;
-}</code></pre>
-                    </div>
-
-                    <h3>Bucles: for</h3>
-                    <div class="code-block">
-                        <pre><code>// For tradicional
-for (let i = 0; i < 5; i++) {
-    console.log(i); // 0, 1, 2, 3, 4
-}
-
-// For...of (arrays)
-const colores = ["rojo", "verde", "azul"];
-for (const color of colores) {
-    console.log(color);
-}
-
-// For...in (objetos)
-const persona = { nombre: "Ana", edad: 30 };
-for (const clave in persona) {
-    console.log(`${clave}: ${persona[clave]}`);
-}</code></pre>
-                    </div>
-
-                    <h3>Bucles: while y do...while</h3>
-                    <div class="code-block">
-                        <pre><code>// While - verifica antes
-let i = 0;
-while (i < 5) {
-    console.log(i);
-    i++;
-}
-
-// Do...while - ejecuta al menos una vez
-let j = 0;
-do {
-    console.log(j);
-    j++;
-} while (j < 5);</code></pre>
-                    </div>
-
-                    <div class="tip-box">
-                        <strong>💡 Consejo:</strong> Usa <code>for...of</code> para iterar arrays y <code>for...in</code> solo para objetos. Evita <code>for...in</code> con arrays.
-                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
                 </div>
-            </div>
 
-            <!-- Topic 4: Funciones -->
-            <div id="js-topic-4" class="topic-content">
-                <h2>Funciones</h2>
-                <div class="topic-body">
-                    <p class="topic-intro">Las funciones son bloques de código reutilizables que realizan una tarea específica. Son fundamentales en JavaScript.</p>
-                    
-                    <h3>Declaración de Funciones</h3>
-                    <div class="code-block">
-                        <pre><code>// Function declaration (hoisting)
-function saludar(nombre) {
-    return `Hola, ${nombre}!`;
-}
-
-// Function expression
-const despedir = function(nombre) {
-    return `Adiós, ${nombre}!`;
-};
-
-// Arrow function (ES6)
-const sumar = (a, b) => a + b;
-
-// Arrow con múltiples líneas
-const calcularTotal = (precio, impuesto) => {
-    const subtotal = precio * impuesto;
-    return precio + subtotal;
-};</code></pre>
-                    </div>
-
-                    <h3>Parámetros y Argumentos</h3>
-                    <div class="code-block">
-                        <pre><code>// Parámetros por defecto
-function saludar(nombre = "Invitado") {
-    return `Hola, ${nombre}!`;
-}
-
-// Rest parameters
-function sumar(...numeros) {
-    return numeros.reduce((acc, num) => acc + num, 0);
-}
-sumar(1, 2, 3, 4); // 10
-
-// Destructuring en parámetros
-function mostrarUsuario({ nombre, edad }) {
-    console.log(`${nombre} tiene ${edad} años`);
-}</code></pre>
-                    </div>
-
-                    <h3>Funciones de Orden Superior</h3>
-                    <div class="code-block">
-                        <pre><code>// Función que retorna otra función
-function crearMultiplicador(multiplicador) {
-    return function(numero) {
-        return numero * multiplicador;
-    };
-}
-
-const duplicar = crearMultiplicador(2);
-duplicar(5); // 10
-
-// Callback function
-function procesarDatos(datos, callback) {
-    const resultado = datos.toUpperCase();
-    callback(resultado);
-}
-
-procesarDatos("hola", console.log); // "HOLA"</code></pre>
-                    </div>
-
-                    <h3>IIFE (Immediately Invoked Function Expression)</h3>
-                    <div class="code-block">
-                        <pre><code>// IIFE tradicional
-(function() {
-    const privado = "valor";
-    console.log(privado);
-})();
-
-// IIFE con arrow function
-(() => {
-    console.log("Ejecutado inmediatamente");
-})();</code></pre>
-                    </div>
-
-                    <div class="tip-box">
-                        <strong>💡 Consejo:</strong> Las arrow functions no tienen su propio <code>this</code>, lo que las hace ideales para callbacks pero no para métodos de objetos.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Topic 5: Arrays y Métodos -->
-            <div id="js-topic-5" class="topic-content">
-                <h2>Arrays y Métodos</h2>
-                <div class="topic-body">
-                    <p class="topic-intro">Los arrays son colecciones ordenadas de valores. JavaScript ofrece métodos poderosos para manipularlos.</p>
-                    
-                    <h3>Creación y Acceso</h3>
-                    <div class="code-block">
-                        <pre><code>// Creación de arrays
-const numeros = [1, 2, 3, 4, 5];
-const mixto = [1, "hola", true, null];
-const vacio = [];
-
-// Acceso a elementos
-numeros[0];     // 1
-numeros[-1];    // undefined
-numeros.length; // 5
-
-// Destructuring
-const [primero, segundo, ...resto] = numeros;
-// primero = 1, segundo = 2, resto = [3, 4, 5]</code></pre>
-                    </div>
-
-                    <h3>Métodos de Transformación</h3>
-                    <div class="code-block">
-                        <pre><code>const numeros = [1, 2, 3, 4, 5];
-
-// map - transforma cada elemento
-const dobles = numeros.map(n => n * 2);
-// [2, 4, 6, 8, 10]
-
-// filter - filtra elementos
-const pares = numeros.filter(n => n % 2 === 0);
-// [2, 4]
-
-// reduce - reduce a un valor
-const suma = numeros.reduce((acc, n) => acc + n, 0);
-// 15</code></pre>
-                    </div>
-
-                    <h3>Métodos de Búsqueda</h3>
-                    <div class="code-block">
-                        <pre><code>const usuarios = [
-    { id: 1, nombre: "Ana" },
-    { id: 2, nombre: "Luis" },
-    { id: 3, nombre: "Carlos" }
-];
-
-// find - encuentra el primer elemento
-const usuario = usuarios.find(u => u.id === 2);
-
-// findIndex - encuentra el índice
-const indice = usuarios.findIndex(u => u.nombre === "Luis");
-
-// some - verifica si alguno cumple
-const hayAdmin = usuarios.some(u => u.rol === "admin");
-
-// every - verifica si todos cumplen
-const todosActivos = usuarios.every(u => u.activo);</code></pre>
-                    </div>
-
-                    <h3>Métodos de Manipulación</h3>
-                    <div class="code-block">
-                        <pre><code>const arr = [1, 2, 3];
-
-// Agregar elementos
-arr.push(4);        // [1, 2, 3, 4] - al final
-arr.unshift(0);     // [0, 1, 2, 3, 4] - al inicio
-
-// Eliminar elementos
-arr.pop();          // elimina último
-arr.shift();        // elimina primero
-
-// slice vs splice
-const original = [1, 2, 3, 4, 5];
-const copia = original.slice(1, 3);  // [2, 3] - no muta
-original.splice(1, 2, "a", "b");     // muta el original</code></pre>
-                    </div>
-
-                    <div class="tip-box">
-                        <strong>💡 Consejo:</strong> Prefiere métodos que no mutan el array original (map, filter, slice) para mantener la inmutabilidad y evitar efectos secundarios.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Topic 6: Objetos y Prototipos -->
-            <div id="js-topic-6" class="topic-content">
-                <h2>Objetos y Prototipos</h2>
-                <div class="topic-body">
-                    <p class="topic-intro">Los objetos son colecciones de pares clave-valor. JavaScript está basado en prototipos, no en clases tradicionales.</p>
-                    
-                    <h3>Creación de Objetos</h3>
-                    <div class="code-block">
-                        <pre><code>// Object literal
-const persona = {
+                <div class="content-detail" id="tema1-3">
+                    <h3>📦 Conceptos Básicos</h3>
+                    <div class="content-body">
+                        <h4>Variables y Tipos:</h4>
+                        <pre><code>// Variables
+let nombre = "Juan";      // String
+const edad = 30;          // Number (inmutable)
+var antiguo = "legacy";   // Var (evitar)
+let activo = true;        // Boolean
+let hobbies = ["leer"];   // Array
+let persona = {           // Object
     nombre: "Juan",
-    edad: 30,
-    saludar() {
-        return `Hola, soy ${this.nombre}`;
-    }
+    edad: 30
 };
-
-// Constructor function
-function Persona(nombre, edad) {
-    this.nombre = nombre;
-    this.edad = edad;
+let nada = null;          // Null
+let indefinido;           // Undefined</code></pre>
+                        <h4>Estructuras de Control:</h4>
+                        <pre><code>// Condicionales
+if (edad >= 18) {
+    console.log("Mayor de edad");
+} else {
+    console.log("Menor de edad");
 }
 
-const juan = new Persona("Juan", 30);
-
-// Object.create
-const proto = { saludar() { return "Hola"; } };
-const obj = Object.create(proto);</code></pre>
-                    </div>
-
-                    <h3>Acceso y Manipulación</h3>
-                    <div class="code-block">
-                        <pre><code>const usuario = {
-    nombre: "María",
-    edad: 25,
-    direccion: { ciudad: "Madrid" }
-};
-
-// Notación de punto
-usuario.nombre; // "María"
-
-// Notación de corchete
-usuario["edad"]; // 25
-const clave = "nombre";
-usuario[clave]; // "María"
-
-// Destructuring
-const { nombre, edad } = usuario;
-
-// Spread operator
-const nuevo = { ...usuario, pais: "España" };</code></pre>
-                    </div>
-
-                    <h3>Prototype Chain</h3>
-                    <div class="code-block">
-                        <pre><code>function Animal(nombre) {
-    this.nombre = nombre;
+// Switch
+switch (dia) {
+    case 1: console.log("Lunes"); break;
+    default: console.log("Otro día");
 }
 
-Animal.prototype.hablar = function() {
-    return `${this.nombre} hace un sonido`;
-};
-
-function Perro(nombre, raza) {
-    Animal.call(this, nombre);
-    this.raza = raza;
+// Bucles
+for (let i = 0; i < 5; i++) {
+    console.log(i);
 }
 
-// Herencia prototípica
-Perro.prototype = Object.create(Animal.prototype);
-Perro.prototype.constructor = Perro;
-
-Perro.prototype.ladrar = function() {
-    return `${this.nombre} ladra`;
-};
-
-const firulais = new Perro("Firulais", "Labrador");
-firulais.hablar(); // "Firulais hace un sonido"</code></pre>
+while (contador < 10) {
+    contador++;
+}</code></pre>
                     </div>
-
-                    <h3>Métodos de Objetos</h3>
-                    <div class="code-block">
-                        <pre><code>const obj = { a: 1, b: 2, c: 3 };
-
-// Obtener claves, valores, entradas
-Object.keys(obj);    // ["a", "b", "c"]
-Object.values(obj);  // [1, 2, 3]
-Object.entries(obj); // [["a",1], ["b",2], ["c",3]]
-
-// Asignar propiedades
-Object.assign({}, obj, { d: 4 });
-
-// Congelar y sellar
-Object.freeze(obj);  // inmutable
-Object.seal(obj);    // no agregar/eliminar</code></pre>
-                    </div>
-
-                    <div class="tip-box">
-                        <strong>💡 Consejo:</strong> Entiende la cadena de prototipos para dominar JavaScript. Las clases ES6 son azúcar sintáctico sobre el sistema de prototipos.
-                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
                 </div>
-            </div>
 
-            <!-- Topic 7: DOM Manipulation -->
-            <div id="js-topic-7" class="topic-content">
-                <h2>DOM Manipulation</h2>
-                <div class="topic-body">
-                    <p class="topic-intro">El Document Object Model (DOM) es la representación en árbol del HTML. JavaScript permite manipularlo dinámicamente.</p>
-                    
-                    <h3>Selección de Elementos</h3>
-                    <div class="code-block">
-                        <pre><code>// Métodos tradicionales
-document.getElementById("miId");
-document.getElementsByClassName("miClase");
-document.getElementsByTagName("div");
-
-// Métodos modernos (recomendados)
-document.querySelector("#miId");
-document.querySelector(".miClase");
-document.querySelectorAll("div.item");
-
-// Selección del body y document
-document.body;
-document.documentElement;</code></pre>
-                    </div>
-
-                    <h3>Manipulación de Contenido</h3>
-                    <div class="code-block">
-                        <pre><code>const elemento = document.querySelector("#titulo");
-
-// Leer contenido
-elemento.textContent;     // Solo texto
-elemento.innerHTML;       // HTML incluido
-elemento.innerText;       // Texto renderizado
+                <div class="content-detail" id="tema2-1">
+                    <h3>🌐 DOM y Eventos</h3>
+                    <div class="content-body">
+                        <h4>Selección de Elementos:</h4>
+                        <pre><code>// Métodos de selección
+const elemento = document.getElementById('miId');
+const elementos = document.querySelectorAll('.miClase');
+const primero = document.querySelector('.miClase');
 
 // Modificar contenido
-elemento.textContent = "Nuevo título";
-elemento.innerHTML = "<span>HTML</span>";
+elemento.textContent = 'Nuevo texto';
+elemento.innerHTML = '<strong>HTML</strong>';
 
-// Crear elementos
-const nuevoDiv = document.createElement("div");
-nuevoDiv.className = "mi-clase";
-nuevoDiv.textContent = "Contenido";
-
-// Agregar al DOM
-document.body.appendChild(nuevoDiv);
-elemento.prepend(nuevoDiv);  // al inicio</code></pre>
-                    </div>
-
-                    <h3>Manipulación de Clases y Atributos</h3>
-                    <div class="code-block">
-                        <pre><code>const btn = document.querySelector("#miBoton");
-
-// Clases (classList API)
-btn.classList.add("activo");
-btn.classList.remove("oculto");
-btn.classList.toggle("dark");
-btn.classList.contains("activo"); // true/false
-
-// Atributos
-btn.getAttribute("href");
-btn.setAttribute("href", "#nuevo");
-btn.removeAttribute("target");
-
-// Data attributes
-btn.dataset.id = "123";
-const id = btn.dataset.id;</code></pre>
-                    </div>
-
-                    <h3>Estilos y Dimensiones</h3>
-                    <div class="code-block">
-                        <pre><code>const caja = document.querySelector(".caja");
-
-// Estilos inline
-caja.style.color = "red";
-caja.style.backgroundColor = "#000";
-caja.style.cssText = "color: blue; padding: 10px;";
-
-// Dimensiones
-caja.offsetWidth;    // ancho con padding
-caja.offsetHeight;   // alto con padding
-caja.getBoundingClientRect(); // posición y tamaño
-
-// Scroll
-window.scroll(0, 100);
-elemento.scrollIntoView();</code></pre>
-                    </div>
-
-                    <div class="tip-box">
-                        <strong>💡 Consejo:</strong> Usa <code>classList</code> en lugar de manipular <code>className</code> directamente. Es más legible y menos propenso a errores.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Topic 8: Eventos del Navegador -->
-            <div id="js-topic-8" class="topic-content">
-                <h2>Eventos del Navegador</h2>
-                <div class="topic-body">
-                    <p class="topic-intro">Los eventos son acciones que ocurren en el navegador. JavaScript permite escuchar y responder a estos eventos.</p>
-                    
-                    <h3>Event Listeners</h3>
-                    <div class="code-block">
-                        <pre><code>const boton = document.querySelector("#miBoton");
-
-// addEventListener (recomendado)
-boton.addEventListener("click", function(e) {
-    console.log("Click!", e);
-});
-
-// Arrow function
-boton.addEventListener("click", (e) => {
+// Modificar estilos
+elemento.style.color = 'red';
+elemento.classList.add('activo');
+elemento.classList.remove('oculto');</code></pre>
+                        <h4>Eventos:</h4>
+                        <pre><code>// Agregar event listener
+boton.addEventListener('click', (e) => {
     e.preventDefault();
-    console.log(this); // cuidado con el contexto
+    console.log('Click!');
 });
 
-// Múltiples eventos
-["click", "dblclick", "contextmenu"].forEach(evento => {
-    boton.addEventListener(evento, manejarEvento);
-});
+// Eventos comunes
+formulario.addEventListener('submit', manejarSubmit);
+input.addEventListener('input', manejarInput);
+window.addEventListener('load', iniciar);</code></pre>
+                        <h4>LocalStorage:</h4>
+                        <pre><code>// Guardar datos
+localStorage.setItem('usuario', 'Juan');
+localStorage.setItem('datos', JSON.stringify(objeto));
 
-// Remover listener
-function handler() { /* ... */ }
-boton.addEventListener("click", handler);
-boton.removeEventListener("click", handler);</code></pre>
+// Leer datos
+const usuario = localStorage.getItem('usuario');
+const datos = JSON.parse(localStorage.getItem('datos'));
+
+// Eliminar
+localStorage.removeItem('usuario');
+localStorage.clear();</code></pre>
                     </div>
-
-                    <h3>Tipos de Eventos</h3>
-                    <div class="code-block">
-                        <pre><code>// Mouse events
-elemento.addEventListener("click", handler);
-elemento.addEventListener("dblclick", handler);
-elemento.addEventListener("mousedown", handler);
-elemento.addEventListener("mouseup", handler);
-elemento.addEventListener("mousemove", handler);
-elemento.addEventListener("mouseenter", handler);
-elemento.addEventListener("mouseleave", handler);
-
-// Keyboard events
-document.addEventListener("keydown", handler);
-document.addEventListener("keyup", handler);
-document.addEventListener("keypress", handler);
-
-// Form events
-formulario.addEventListener("submit", handler);
-input.addEventListener("change", handler);
-input.addEventListener("input", handler);
-input.addEventListener("focus", handler);
-input.addEventListener("blur", handler);</code></pre>
-                    </div>
-
-                    <h3>Event Object</h3>
-                    <div class="code-block">
-                        <pre><code>elemento.addEventListener("click", function(e) {
-    // Propiedades del evento
-    e.target;        // elemento que disparó
-    e.currentTarget; // elemento con listener
-    e.type;          // tipo de evento
-    e.timeStamp;     // timestamp
-    
-    // Mouse events
-    e.clientX;       // posición X
-    e.clientY;       // posición Y
-    e.button;        // botón presionado
-    
-    // Keyboard events
-    e.key;           // tecla presionada
-    e.code;          // código de tecla
-    e.ctrlKey;       // Ctrl presionado
-    
-    // Métodos
-    e.preventDefault();  // evita comportamiento default
-    e.stopPropagation(); // detiene propagación
-});</code></pre>
-                    </div>
-
-                    <h3>Event Delegation</h3>
-                    <div class="code-block">
-                        <pre><code>// En lugar de agregar listeners a cada item
-const lista = document.querySelector("#miLista");
-
-// Usar delegación de eventos
-lista.addEventListener("click", function(e) {
-    if (e.target.matches(".item")) {
-        console.log("Item clickeado:", e.target.textContent);
-    }
-    if (e.target.closest(".item")) {
-        const item = e.target.closest(".item");
-        console.log("Item:", item.textContent);
-    }
-});
-
-// Ventaja: funciona con elementos dinámicos
-lista.innerHTML += '<li class="item">Nuevo</li>';</code></pre>
-                    </div>
-
-                    <div class="tip-box">
-                        <strong>💡 Consejo:</strong> Usa event delegation para listas grandes o elementos dinámicos. Mejora el rendimiento y evita agregar/remover listeners constantemente.
-                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
                 </div>
-            </div>
 
-            <!-- Topic 9: Programación Asíncrona -->
-            <div id="js-topic-9" class="topic-content">
-                <h2>Programación Asíncrona</h2>
-                <div class="topic-body">
-                    <p class="topic-intro">JavaScript es single-threaded pero puede manejar operaciones asíncronas mediante callbacks, promesas y async/await.</p>
-                    
-                    <h3>Callbacks</h3>
-                    <div class="code-block">
-                        <pre><code>// Callback tradicional
-function procesarDatos(datos, callback) {
-    setTimeout(() => {
-        const resultado = datos.toUpperCase();
-        callback(resultado);
-    }, 1000);
-}
-
-procesarDatos("hola", (resultado) => {
-    console.log(resultado); // "HOLA"
-});
-
-// Callback hell (evitar)
-obtenerUsuario((usuario) => {
-    obtenerPosts(usuario.id, (posts) => {
-        obtenerComentarios(posts[0].id, (comentarios) => {
-            console.log(comentarios);
-        });
-    });
-});</code></pre>
-                    </div>
-
-                    <h3>Promesas</h3>
-                    <div class="code-block">
-                        <pre><code>// Crear promesa
-const promesa = new Promise((resolve, reject) => {
-    setTimeout(() => {
-        const exito = true;
-        if (exito) {
-            resolve("Datos obtenidos");
-        } else {
-            reject("Error en la solicitud");
-        }
-    }, 1000);
-});
-
-// Consumir promesa
-promesa
-    .then(resultado => console.log(resultado))
-    .catch(error => console.error(error))
-    .finally(() => console.log("Finalizado"));
-
-// Encadenamiento
-obtenerUsuario()
-    .then(usuario => obtenerPosts(usuario.id))
-    .then(posts => obtenerComentarios(posts[0].id))
-    .then(comentarios => console.log(comentarios));</code></pre>
-                    </div>
-
-                    <h3>Async/Await</h3>
-                    <div class="code-block">
-                        <pre><code>// Función async
-async function obtenerDatos() {
-    try {
-        const usuario = await obtenerUsuario();
-        const posts = await obtenerPosts(usuario.id);
-        const comentarios = await obtenerComentarios(posts[0].id);
-        return comentarios;
-    } catch (error) {
-        console.error("Error:", error);
-        throw error;
-    }
-}
-
-// Múltiples promesas en paralelo
-async function obtenerTodo() {
-    const [usuarios, posts, comentarios] = await Promise.all([
-        obtenerUsuarios(),
-        obtenerPosts(),
-        obtenerComentarios()
-    ]);
-    return { usuarios, posts, comentarios };
-}</code></pre>
-                    </div>
-
-                    <h3>Fetch API</h3>
-                    <div class="code-block">
-                        <pre><code>// GET request
-async function obtenerDatos() {
-    const response = await fetch("/api/usuarios");
-    const datos = await response.json();
-    return datos;
-}
-
-// POST request
-async function crearUsuario(usuario) {
-    const response = await fetch("/api/usuarios", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(usuario)
-    });
-    return await response.json();
-}
-
-// Manejo de errores
-try {
-    const response = await fetch("/api/datos");
-    if (!response.ok) {
-        throw new Error(`HTTP ${response.status}`);
-    }
-    const datos = await response.json();
-} catch (error) {
-    console.error("Fetch error:", error);
-}</code></pre>
-                    </div>
-
-                    <div class="tip-box">
-                        <strong>💡 Consejo:</strong> Usa async/await para código más limpio y legible. Usa Promise.all() para ejecutar promesas en paralelo cuando no haya dependencias.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Topic 10: Módulos ES6 -->
-            <div id="js-topic-10" class="topic-content">
-                <h2>Módulos ES6</h2>
-                <div class="topic-body">
-                    <p class="topic-intro">Los módulos permiten dividir el código en archivos separados y reutilizables. ES6 introdujo un sistema de módulos nativo.</p>
-                    
-                    <h3>Exportar</h3>
-                    <div class="code-block">
-                        <pre><code>// math.js
-
-// Export named
-export const PI = 3.1416;
-export function sumar(a, b) {
+                <div class="content-detail" id="tema2-2">
+                    <h3>✨ JavaScript Moderno (ES6+)</h3>
+                    <div class="content-body">
+                        <h4>Arrow Functions:</h4>
+                        <pre><code>// Función tradicional
+function sumar(a, b) {
     return a + b;
 }
-export class Calculadora {
-    // ...
-}
 
-// Export default (uno por archivo)
-export default function calcular() {
-    // ...
-}
+// Arrow function
+const sumar = (a, b) => a + b;
 
-// Exportar al final
-const VERSION = "1.0.0";
-export { VERSION, sumar, PI };</code></pre>
-                    </div>
+// Con múltiples líneas
+const calcular = (a, b) => {
+    const resultado = a + b;
+    return resultado * 2;
+};</code></pre>
+                        <h4>Destructuring:</h4>
+                        <pre><code>// Arrays
+const [primero, segundo] = [1, 2];
 
-                    <h3>Importar</h3>
-                    <div class="code-block">
-                        <pre><code>// Import named exports
-import { sumar, PI } from "./math.js";
-import { sumar as add, PI } from "./math.js";
+// Objetos
+const { nombre, edad } = persona;
 
-// Import default
-import calcular from "./math.js";
-
-// Import todo como namespace
-import * as MathUtils from "./math.js";
-MathUtils.sumar(1, 2);
-
-// Import side effects (sin bindings)
-import "./styles.css";
-import "./polyfills.js";
-
-// Dynamic import (code splitting)
-button.addEventListener("click", async () => {
-    const modulo = await import("./modulo.js");
-    modulo.funcion();
-});</code></pre>
-                    </div>
-
-                    <h3>Uso en HTML</h3>
-                    <div class="code-block">
-                        <pre><code>&lt;!-- En HTML --&gt;
-&lt;script type="module" src="main.js"&gt;&lt;/script&gt;
-
-&lt;!-- Con defer (recomendado) --&gt;
-&lt;script type="module" src="main.js" defer&gt;&lt;/script&gt;
-
-&lt;!-- Import map para aliases --&gt;
-&lt;script type="importmap"&gt;
-{
-    "imports": {
-        "lodash": "https://cdn.skypack.dev/lodash",
-        "utils/": "./src/utils/"
-    }
-}
-&lt;/script&gt;</code></pre>
-                    </div>
-
-                    <h3>Patrones Comunes</h3>
-                    <div class="code-block">
-                        <pre><code>// Barrel export (index.js)
-export { default as Usuario } from "./Usuario.js";
-export { default as Producto } from "./Producto.js";
-export * from "./constants.js";
-
-// Re-export
-export { sumar, restar } from "./math.js";
-export * from "./utils.js";
-
-// Conditional loading
-if (condition) {
-    const modulo = await import("./moduloA.js");
-} else {
-    const modulo = await import("./moduloB.js");
-}</code></pre>
-                    </div>
-
-                    <div class="tip-box">
-                        <strong>💡 Consejo:</strong> Usa exports named por defecto y default solo cuando el módulo tenga una única responsabilidad clara. Facilita el tree-shaking.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Topic 11: Clases y Herencia -->
-            <div id="js-topic-11" class="topic-content">
-                <h2>Clases y Herencia</h2>
-                <div class="topic-body">
-                    <p class="topic-intro">Las clases ES6 son azúcar sintáctico sobre el sistema de prototipos. Proporcionan una sintaxis más clara para la herencia.</p>
-                    
-                    <h3>Declaración de Clases</h3>
-                    <div class="code-block">
-                        <pre><code>class Persona {
-    // Constructor
-    constructor(nombre, edad) {
-        this.nombre = nombre;
-        this.edad = edad;
-    }
-
-    // Método de instancia
-    saludar() {
-        return `Hola, soy ${this.nombre}`;
-    }
-
-    // Getter
-    get info() {
-        return `${this.nombre}, ${this.edad} años`;
-    }
-
-    // Setter
-    set edad(valor) {
-        if (valor < 0) throw new Error("Edad inválida");
-        this._edad = valor;
-    }
-
-    // Método estático
-    static crearAnonimo() {
-        return new Persona("Anónimo", 0);
-    }
-}</code></pre>
-                    </div>
-
-                    <h3>Herencia con Extends</h3>
-                    <div class="code-block">
-                        <pre><code>class Empleado extends Persona {
-    constructor(nombre, edad, puesto) {
-        super(nombre, edad); // llama al constructor padre
-        this.puesto = puesto;
-        this.salario = 0;
-    }
-
-    // Sobrescribir método
-    saludar() {
-        return `${super.saludar()}, soy ${this.puesto}`;
-    }
-
-    // Nuevo método
-    trabajar() {
-        return `${this.nombre} está trabajando como ${this.puesto}`;
-    }
-}
-
-const emp = new Empleado("Juan", 30, "Desarrollador");
-emp.saludar(); // "Hola, soy Juan, soy Desarrollador"</code></pre>
-                    </div>
-
-                    <h3>Propiedades Privadas</h3>
-                    <div class="code-block">
-                        <pre><code>class CuentaBancaria {
-    // Propiedad privada (ES2022)
-    #saldo = 0;
-    #pin;
-
-    constructor(pin) {
-        this.#pin = pin;
-    }
-
-    depositar(cantidad) {
-        if (cantidad > 0) {
-            this.#saldo += cantidad;
-        }
-    }
-
-    retirar(cantidad, pin) {
-        if (pin !== this.#pin) {
-            throw new Error("PIN incorrecto");
-        }
-        if (cantidad > this.#saldo) {
-            throw new Error("Saldo insuficiente");
-        }
-        this.#saldo -= cantidad;
-    }
-
-    get saldo() {
-        return this.#saldo;
-    }
-}</code></pre>
-                    </div>
-
-                    <h3>Métodos Estáticos y Campos</h3>
-                    <div class="code-block">
-                        <pre><code>class MathUtils {
-    // Campo estático
-    static VERSION = "1.0.0";
-
-    // Método estático
-    static sumar(a, b) {
-        return a + b;
-    }
-
-    static aleatorio(min, max) {
-        return Math.floor(Math.random() * (max - min) + min);
-    }
-}
-
-// Campos de instancia
-class Usuario {
-    nombre = "";           // campo público
-    #password = "";        // campo privado
-    static contador = 0;   // campo estático
-
-    constructor(nombre) {
-        this.nombre = nombre;
-        Usuario.contador++;
-    }
-}</code></pre>
-                    </div>
-
-                    <div class="tip-box">
-                        <strong>💡 Consejo:</strong> Las clases son útiles para modelar entidades con estado y comportamiento. Para funciones puras, considera usar módulos con funciones exportadas.
-                    </div>
-                </div>
-            </div>
-
-            <!-- Topic 12: Patrones y Buenas Prácticas -->
-            <div id="js-topic-12" class="topic-content">
-                <h2>Patrones y Buenas Prácticas</h2>
-                <div class="topic-body">
-                    <p class="topic-intro">Los patrones de diseño y buenas prácticas ayudan a escribir código más limpio, mantenible y eficiente.</p>
-                    
-                    <h3>Closures</h3>
-                    <div class="code-block">
-                        <pre><code>// Closure básico
-function crearContador() {
-    let cuenta = 0;
-    return function() {
-        cuenta++;
-        return cuenta;
-    };
-}
-
-const contador = crearContador();
-contador(); // 1
-contador(); // 2
-
-// Closure con factory
-function crearSaludo(saludo) {
-    return function(nombre) {
-        return `${saludo}, ${nombre}!`;
-    };
-}
-
-const saludar = crearSaludo("Hola");
-const despedir = crearSaludo("Adiós");
-saludar("Juan"); // "Hola, Juan!"</code></pre>
-                    </div>
-
-                    <h3>Destructuring</h3>
-                    <div class="code-block">
-                        <pre><code>// Array destructuring
-const [a, b, ...resto] = [1, 2, 3, 4, 5];
-const [x = 10, y = 20] = [undefined, 30];
-
-// Object destructuring
-const { nombre, edad, direccion: { ciudad } } = usuario;
-const { nombre: n, ...resto } = usuario;
-
-// En parámetros de función
+// Parámetros
 function mostrar({ nombre, edad }) {
-    console.log(`${nombre}, ${edad}`);
-}
-
-// Swap de variables
-let a = 1, b = 2;
-[a, b] = [b, a];</code></pre>
-                    </div>
-
-                    <h3>Spread y Rest</h3>
-                    <div class="code-block">
+    console.log(`${nombre} tiene ${edad}`);
+}</code></pre>
+                        <h4>Spread y Rest:</h4>
                         <pre><code>// Spread operator
-const arr1 = [1, 2, 3];
-const arr2 = [...arr1, 4, 5, 6];
-
-const obj1 = { a: 1, b: 2 };
-const obj2 = { ...obj1, c: 3 };
+const nuevoArray = [...array, 4, 5];
+const nuevoObjeto = { ...objeto, prop: 'valor' };
 
 // Rest parameters
 function sumar(...numeros) {
-    return numeros.reduce((a, b) => a + b, 0);
+    return numeros.reduce((a, b) => a + b);
+}</code></pre>
+                        <h4>Módulos ES6:</h4>
+                        <pre><code>// Exportar
+export const miFuncion = () => {};
+export default class MiClase {}
+
+// Importar
+import { miFuncion } from './modulo.js';
+import MiClase from './modulo.js';</code></pre>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
+
+                <div class="content-detail" id="tema3-1">
+                    <h3>🔄 Programación Asíncrona</h3>
+                    <div class="content-body">
+                        <h4>Callbacks:</h4>
+                        <pre><code>function procesarDatos(callback) {
+    setTimeout(() => {
+        callback('Datos procesados');
+    }, 1000);
 }
 
-// En destructuring
-const [primero, ...otros] = [1, 2, 3, 4];
-const { a, ...resto } = { a: 1, b: 2, c: 3 };</code></pre>
-                    </div>
-
-                    <h3>Optional Chaining y Nullish Coalescing</h3>
-                    <div class="code-block">
-                        <pre><code>// Optional chaining (?.)
-const calle = usuario?.direccion?.calle;
-const primerHijo = usuario?.hijos?.[0];
-usuario?.saludar?.();
-
-// Nullish coalescing (??)
-const nombre = usuario.nombre ?? "Anónimo";
-const puerto = config.puerto ?? 8080;
-
-// Diferencia con ||
-const valor = 0 || "default";     // "default"
-const valor2 = 0 ?? "default";    // 0</code></pre>
-                    </div>
-
-                    <h3>Patrones Comunes</h3>
-                    <div class="code-block">
-                        <pre><code>// Module Pattern
-const MiModulo = (function() {
-    let privado = 0;
-    return {
-        incrementar() { privado++; },
-        obtener() { return privado; }
-    };
-})();
-
-// Singleton
-class Singleton {
-    static instancia;
-    static obtenerInstancia() {
-        if (!Singleton.instancia) {
-            Singleton.instancia = new Singleton();
-        }
-        return Singleton.instancia;
+procesarDatos((resultado) => {
+    console.log(resultado);
+});</code></pre>
+                        <h4>Promesas:</h4>
+                        <pre><code>const promesa = new Promise((resolve, reject) => {
+    const exito = true;
+    if (exito) {
+        resolve('Operación exitosa');
+    } else {
+        reject('Error en la operación');
     }
-}
+});
 
-// Observer Pattern
-class EventEmitter {
-    constructor() {
-        this.eventos = {};
-    }
-    on(evento, callback) {
-        if (!this.eventos[evento]) {
-            this.eventos[evento] = [];
-        }
-        this.eventos[evento].push(callback);
-    }
-    emit(evento, datos) {
-        this.eventos[evento]?.forEach(cb => cb(datos));
+promesa
+    .then(resultado => console.log(resultado))
+    .catch(error => console.error(error));</code></pre>
+                        <h4>Async/Await:</h4>
+                        <pre><code>async function obtenerDatos() {
+    try {
+        const respuesta = await fetch('https://api.ejemplo.com/datos');
+        const datos = await respuesta.json();
+        return datos;
+    } catch (error) {
+        console.error('Error:', error);
     }
 }</code></pre>
-                    </div>
+                        <h4>Fetch API:</h4>
+                        <pre><code>// GET
+fetch('https://api.ejemplo.com/usuarios')
+    .then(res => res.json())
+    .then(data => console.log(data));
 
-                    <div class="tip-box">
-                        <strong>💡 Consejo:</strong> Sigue los principios SOLID, escribe funciones puras cuando sea posible, y mantén tu código DRY (Don't Repeat Yourself) pero no abuses de la abstracción.
+// POST
+fetch('https://api.ejemplo.com/usuarios', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ nombre: 'Juan' })
+});</code></pre>
                     </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
+
+                <div class="content-detail" id="tema3-2">
+                    <h3>📋 Proyecto Final</h3>
+                    <div class="content-body">
+                        <p>Desarrolla una Single Page Application (SPA) completa integrando todos los conceptos aprendidos:</p>
+                        <ol>
+                            <li>Configuración del proyecto con Vite o Webpack</li>
+                            <li>Estructura de carpetas modular</li>
+                            <li>Consumo de API REST con fetch/axios</li>
+                            <li>Gestión de estado con localStorage</li>
+                            <li>Routing básico con History API</li>
+                            <li>Manejo de errores y loading states</li>
+                        </ol>
+                        <div class="info-box">
+                            <strong>💡 Proyecto sugerido:</strong>
+                            <p>Crea una aplicación de gestión de tareas (Todo App) con funcionalidades CRUD, filtrado, búsqueda y persistencia de datos en localStorage.</p>
+                        </div>
+                        <h4>Estructura sugerida:</h4>
+                        <pre><code>mi-app/
+├── index.html
+├── js/
+│   ├── main.js
+│   ├── api.js
+│   ├── storage.js
+│   └── components/
+│       ├── TaskList.js
+│       └── TaskForm.js
+└── css/
+    └── styles.css</code></pre>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
                 </div>
             </div>
         </div>
@@ -1468,25 +457,24 @@ class EventEmitter {
             <div class="examples-container">
                 <div class="example-card">
                     <h4>Variables y Tipos</h4>
-                    <pre><code class="language-javascript">const nombre = "Juan";
-let edad = 30;
-const esMayor = edad >= 18;
+                    <pre><code class="language-javascript">let nombre = "Juan";
+const edad = 30;
+let activo = true;
 const hobbies = ["leer", "codificar"];
 const persona = { nombre, edad };</code></pre>
                 </div>
                 <div class="example-card">
                     <h4>Funciones</h4>
-                    <pre><code class="language-javascript">// Función tradicional
-function saludar(nombre) {
-    return `Hola ${nombre}`;
-}
+                    <pre><code class="language-javascript">const saludar = (nombre) => `Hola ${nombre}`;
 
-// Arrow function
-const sumar = (a, b) => a + b;</code></pre>
+const sumar = (a, b = 0) => a + b;
+
+// Callback
+const procesar = (datos, cb) => cb(datos);</code></pre>
                 </div>
                 <div class="example-card">
                     <h4>DOM Manipulation</h4>
-                    <pre><code class="language-javascript">const btn = document.querySelector('#miBoton');
+                    <pre><code class="language-javascript">const btn = document.querySelector('#btn');
 btn.addEventListener('click', () => {
     document.body.classList.toggle('dark');
 });</code></pre>
@@ -1494,14 +482,13 @@ btn.addEventListener('click', () => {
                 <div class="example-card">
                     <h4>Async/Await</h4>
                     <pre><code class="language-javascript">async function obtenerDatos() {
-    const response = await fetch('/api/data');
-    const datos = await response.json();
-    return datos;
+    const res = await fetch(url);
+    return await res.json();
 }</code></pre>
                 </div>
             </div>
             <div class="text-center">
-                <a href="#temas" class="btn btn-primary">Explorar todos los temas</a>
+                <a href="#" class="btn btn-primary">Ver más ejemplos</a>
             </div>
         </div>
     </section>
