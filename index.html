@@ -134,56 +134,57 @@
     </section>
 
     <!-- Temas -->
-    <section id="temas" class="section">
+    <section id="temas" class="topics">
         <div class="container">
-            <h2>Contenido del Curso</h2>
+            <h2>📖 Temas del Curso</h2>
+            <p class="topics-intro">Haz clic en cualquier tema para ver el contenido detallado</p>
+            
             <div class="topics-grid">
                 <div class="topic-card">
-                    <div class="topic-number">01</div>
-                    <h3>Introducción</h3>
-                    <p>Historia de JavaScript, evolución ECMAScript y configuración del entorno de desarrollo.</p>
-                    <a href="#tema1-1" class="topic-link">Ver tema →</a>
+                    <div class="topic-header">
+                        <span class="topic-icon">⚡</span>
+                        <h3>Módulo 1: Fundamentos</h3>
+                    </div>
+                    <ul class="topic-list">
+                        <li><a href="#tema1-1">Introducción a JavaScript</a></li>
+                        <li><a href="#tema1-2">Instalación del Entorno</a></li>
+                        <li><a href="#tema1-3">Conceptos básicos</a></li>
+                        <li><a href="#tema1-4">Variables y Tipos de Datos</a></li>
+                    </ul>
+                    <a href="#tema1-1" class="btn-topic">Ver tema →</a>
                 </div>
+
                 <div class="topic-card">
-                    <div class="topic-number">02</div>
-                    <h3>Instalación</h3>
-                    <p>Node.js, npm, gestores de paquetes y editores de código modernos.</p>
-                    <a href="#tema1-2" class="topic-link">Ver tema →</a>
+                    <div class="topic-header">
+                        <span class="topic-icon">⚙️</span>
+                        <h3>Módulo 2: Intermedio</h3>
+                    </div>
+                    <ul class="topic-list">
+                        <li><a href="#tema2-1">DOM y Eventos</a></li>
+                        <li><a href="#tema2-2">JavaScript Moderno</a></li>
+                        <li><a href="#tema2-3">Funciones y Scope</a></li>
+                        <li><a href="#tema2-4">Arrays y Objetos</a></li>
+                    </ul>
+                    <a href="#tema2-1" class="btn-topic">Ver tema →</a>
                 </div>
+
                 <div class="topic-card">
-                    <div class="topic-number">03</div>
-                    <h3>Conceptos básicos</h3>
-                    <p>Variables, tipos de datos, operadores, estructuras de control y funciones.</p>
-                    <a href="#tema1-3" class="topic-link">Ver tema →</a>
-                </div>
-                <div class="topic-card">
-                    <div class="topic-number">04</div>
-                    <h3>DOM y Eventos</h3>
-                    <p>Manipulación del DOM, eventos, formularios y almacenamiento local.</p>
-                    <a href="#tema2-1" class="topic-link">Ver tema →</a>
-                </div>
-                <div class="topic-card">
-                    <div class="topic-number">05</div>
-                    <h3>JavaScript Moderno</h3>
-                    <p>ES6+, arrow functions, destructuring, spread operator y módulos.</p>
-                    <a href="#tema2-2" class="topic-link">Ver tema →</a>
-                </div>
-                <div class="topic-card">
-                    <div class="topic-number">06</div>
-                    <h3>Asincronía</h3>
-                    <p>Callbacks, promesas, async/await y fetch API para peticiones HTTP.</p>
-                    <a href="#tema3-1" class="topic-link">Ver tema →</a>
-                </div>
-                <div class="topic-card">
-                    <div class="topic-number">07</div>
-                    <h3>Proyecto final</h3>
-                    <p>Desarrollo de una aplicación SPA completa con JavaScript moderno.</p>
-                    <a href="#tema3-2" class="topic-link">Ver tema →</a>
+                    <div class="topic-header">
+                        <span class="topic-icon">🚀</span>
+                        <h3>Módulo 3: Avanzado</h3>
+                    </div>
+                    <ul class="topic-list">
+                        <li><a href="#tema3-1">Asincronía</a></li>
+                        <li><a href="#tema3-2">Proyecto final</a></li>
+                        <li><a href="#tema3-3">APIs del Navegador</a></li>
+                        <li><a href="#tema3-4">Best Practices y Debugging</a></li>
+                    </ul>
+                    <a href="#tema3-1" class="btn-topic">Ver tema →</a>
                 </div>
             </div>
 
             <!-- Contenido Detallado de Temas -->
-            <div class="topic-content-container">
+            <div class="topic-content">
                 <div class="content-detail" id="tema1-1">
                     <h3>📌 Introducción a JavaScript</h3>
                     <div class="content-body">
@@ -446,6 +447,215 @@ fetch('https://api.ejemplo.com/usuarios', {
                     </div>
                     <a href="#temas" class="btn btn-back">← Volver a temas</a>
                 </div>
+                <div class="content-detail" id="tema1-4">
+                    <h3>📦 Arrays y Objetos Avanzados</h3>
+                    <div class="content-body">
+                        <h4>Métodos de Arrays:</h4>
+                        <pre><code>const nums = [1, 2, 3, 4, 5];
+
+// map - transformar
+nums.map(n => n * 2); // [2, 4, 6, 8, 10]
+
+// filter - filtrar
+nums.filter(n => n > 2); // [3, 4, 5]
+
+// reduce - acumular
+nums.reduce((acc, n) => acc + n, 0); // 15
+
+// find - encontrar
+nums.find(n => n > 3); // 4
+
+// some y every
+nums.some(n => n > 4); // true
+nums.every(n => n > 0); // true</code></pre>
+                        <h4>Object Methods:</h4>
+                        <pre><code>const persona = { nombre: 'Juan', edad: 30 };
+
+// Keys y Values
+Object.keys(persona);   // ['nombre', 'edad']
+Object.values(persona); // ['Juan', 30]
+Object.entries(persona); // [['nombre', 'Juan'], ['edad', 30]]
+
+// Destructuring con objetos
+const { nombre, edad } = persona;
+
+// Spread operator
+const copia = { ...persona, ciudad: 'Madrid' };</code></pre>
+                        <h4>Optional Chaining:</h4>
+                        <pre><code>// Antes
+const ciudad = usuario && usuario.direccion && usuario.direccion.ciudad;
+
+// Con optional chaining
+const ciudad = usuario?.direccion?.ciudad;</code></pre>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
+
+                <div class="content-detail" id="tema2-3">
+                    <h3>🎯 Programación Funcional</h3>
+                    <div class="content-body">
+                        <h4>Conceptos Fundamentales:</h4>
+                        <pre><code>// Funciones puras
+const sumar = (a, b) => a + b;
+
+// Inmutabilidad
+const agregarItem = (array, item) => [...array, item];
+
+// Composición de funciones
+const compose = (...fns) => x => 
+    fns.reduceRight((v, f) => f(v), x);</code></pre>
+                        <h4>Currying:</h4>
+                        <pre><code>// Función currificada
+const multiplicar = a => b => a * b;
+const porDos = multiplicar(2);
+porDos(5); // 10
+
+// Uso práctico
+const filtrarYOrdenar = predicado => 
+                  ordenar => 
+                  array => 
+                  array.filter(predicado).sort(ordenar);
+
+const positivoYAsc = filtrarYOrdenar(n => n > 0)(asc);
+positivoYAsc([-1, 3, 2, -5]); // [2, 3]</code></pre>
+                        <h4>Higher-Order Functions:</h4>
+                        <pre><code>// Función que retorna función
+const crearSaludo = saludo => nombre => `${saludo}, ${nombre}!`;
+
+const saludarHola = crearSaludo('Hola');
+saludarHola('Juan'); // "Hola, Juan!"</code></pre>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
+
+                <div class="content-detail" id="tema2-4">
+                    <h3>🏗️ Clases y Herencia</h3>
+                    <div class="content-body">
+                        <h4>Clases Básicas:</h4>
+                        <pre><code>class Persona {
+    constructor(nombre, edad) {
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+    
+    saludar() {
+        return `Hola, soy ${this.nombre}`;
+    }
+    
+    static crear(nombre) {
+        return new Persona(nombre, 0);
+    }
+}
+
+const juan = new Persona('Juan', 30);
+juan.saludar(); // "Hola, soy Juan"</code></pre>
+                        <h4>Herencia:</h4>
+                        <pre><code>class Estudiante extends Persona {
+    constructor(nombre, edad, grado) {
+        super(nombre, edad);
+        this.grado = grado;
+    }
+    
+    saludar() {
+        return `${super.saludar()} y estoy en ${this.grado}`;
+    }
+}
+
+const maria = new Estudiante('María', 20, '3er año');</code></pre>
+                        <h4>Getters y Setters:</h4>
+                        <pre><code>class Usuario {
+    #password; // Campo privado
+    
+    constructor(email) {
+        this.email = email;
+        this.#password = '';
+    }
+    
+    set password(p) {
+        this.#password = hash(p);
+    }
+    
+    get password() {
+        return '********';
+    }
+}</code></pre>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
+
+                <div class="content-detail" id="tema3-3">
+                    <h3>🧪 Testing y Depuración</h3>
+                    <div class="content-body">
+                        <h4>Console Methods:</h4>
+                        <pre><code>console.log('Info');
+console.warn('Warning');
+console.error('Error');
+console.table([{a:1}, {a:2}]);
+console.time('tarea');
+// código
+console.timeEnd('tarea');
+console.assert(condición, 'Mensaje');</code></pre>
+                        <h4>Debugging:</h4>
+                        <pre><code>debugger; // Punto de quiebre en código
+
+// En Chrome DevTools
+// step over - siguiente línea
+// step into - entrar en función
+// step out - salir de función</code></pre>
+                        <h4>Testing con Jest:</h4>
+                        <pre><code>// suma.js
+export const sumar = (a, b) => a + b;
+
+// suma.test.js
+import { sumar } from './suma';
+
+test('sumar 1 + 2 es 3', () => {
+    expect(sumar(1, 2)).toBe(3);
+});</code></pre>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
+
+                <div class="content-detail" id="tema3-4">
+                    <h3>📦 Módulos y Bundling</h3>
+                    <div class="content-body">
+                        <h4>ES Modules:</h4>
+                        <pre><code>// utils.js
+export const API_URL = 'https://api.com';
+export function fetchData() { ... }
+export default function() { ... }
+
+// index.js
+import miDefault, { API_URL, fetchData } from './utils.js';</code></pre>
+                        <h4>CommonJS (Node.js):</h4>
+                        <pre><code>// utils.js
+const utilidades = { ... };
+module.exports = utilidades;
+
+// index.js
+const utils = require('./utils.js');</code></pre>
+                        <h4>Vite (Bundler Moderno):</h4>
+                        <pre><code># Crear proyecto
+npm create vite@latest mi-app -- --template vanilla
+
+# Ejecutar desarrollo
+npm run dev
+
+# Build producción
+npm run build</code></pre>
+                        <h4>npm Scripts:</h4>
+                        <pre><code>// package.json
+{
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "test": "jest"
+    }
+}</code></pre>
+                    </div>
+                    <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                </div>
             </div>
         </div>
     </section>
@@ -493,40 +703,23 @@ btn.addEventListener('click', () => {
         </div>
     </section>
 
-    <!-- Footer -->
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2>👨‍💻 Desarrollado por Isaac Esteban Haro Torres</h2>
+                <p class="contact-title">Ingeniero en Sistemas · Full Stack · Automatización · Data</p>
+                <div class="contact-info">
+                    <p>📧 Email: <a href="mailto:zackharo1@gmail.com">zackharo1@gmail.com</a></p>
+                    <p>📱 WhatsApp: 098805517</p>
+                    <p>💻 GitHub: <a href="https://github.com/ieharo1" target="_blank">github.com/ieharo1</a></p>
+                    <p>🌐 Portafolio: <a href="https://ieharo1.github.io/portafolio-isaac.haro/" target="_blank">ieharo1.github.io/portafolio-isaac.haro/</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>JavaScript desde Cero</h4>
-                    <p>Guía educativa completa para aprender JavaScript desde los fundamentos hasta conceptos avanzados.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Enlaces Rápidos</h4>
-                    <ul>
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#que-es">¿Qué es?</a></li>
-                        <li><a href="#temas">Temas</a></li>
-                        <li><a href="#ejemplos">Ejemplos</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Recursos</h4>
-                    <ul>
-                        <li><a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">MDN Web Docs</a></li>
-                        <li><a href="https://javascript.info/" target="_blank">JavaScript.info</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>👨‍💻 Desarrollado por <strong>Isaac Esteban Haro Torres</strong></p>
-                <p class="developer-info">Ingeniero en Sistemas · Full Stack · Automatización · Data</p>
-                <div class="developer-contact">
-                    <p>📧 Email: <a href="mailto:zackharo1@gmail.com">zackharo1@gmail.com</a></p>
-                    <p>💻 GitHub: <a href="https://github.com/ieharo1" target="_blank">github.com/ieharo1</a></p>
-                </div>
-                <p class="copyright">© 2026 Isaac Esteban Haro Torres - Todos los derechos reservados.</p>
-            </div>
+            <p>&copy; 2026 Isaac Esteban Haro Torres - Todos los derechos reservados.</p>
         </div>
     </footer>
 
